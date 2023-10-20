@@ -52,29 +52,29 @@
                     <div class="app__body-top">
                         <div class="app__card">
                             <div class="app__card-text">Счет</div>
-                            <div class="app__card-count">{{totalScore}}</div>
+                            <div class="app__card-count">{{ totalScore }}</div>
                         </div>
                         <div class="app__card">
                             <div class="app__card-text">Открыто рас</div>
-                            <div class="app__card-count">{{openRaces}}</div>
+                            <div class="app__card-count">{{ openRaces }}</div>
                         </div>
                         <div class="app__card">
                             <div class="app__card-text">Всего игр</div>
-                            <div class="app__card-count">{{totalGames}}</div>
+                            <div class="app__card-count">{{ totalGames }}</div>
                         </div>
                         <div class="app__card">
                             <div class="app__card-text">Любимая раса</div>
-                            <div class="app__card-count">{{favoriteRaces}}</div>
+                            <div class="app__card-count">{{ favoriteRaces }}</div>
                         </div>
                     </div>
                     <div class="app__body-middle">
                         <div class="app__result" v-for="(race, k) in results" v-show="showResultRace[k]" @click="goToResult(k)">
                             <div class="app__result-score">
                                 <i class="fa fa-star" aria-hidden="true"></i>
-                                <div class="app__result-count">{{race.points}}</div>
+                                <div class="app__result-count">{{ race.points }}</div>
                             </div>
-                            <div class="app__result-name">{{race.name}}</div>
-                            <div class="app__result-amount">{{totalGame[k]}}</div>
+                            <div class="app__result-name">{{ race.name }}</div>
+                            <div class="app__result-amount">{{ totalGame[k] }}</div>
                         </div>
                     </div>
                     <div class="app__body-bottom">

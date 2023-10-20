@@ -123,7 +123,7 @@ let app = new Vue({
                 this.goToResult('infested')
                 this.totalGame.infested++
             }
-            localStorage.setItem('sc2totalGames', JSON.stringify(this.totalGame))
+            localStorage.setItem('sc2totalGame', JSON.stringify(this.totalGame))
         }
     },
     computed: {
@@ -153,12 +153,12 @@ let app = new Vue({
         showResultRace() {
             return {
                 'zerg': this.totalGame.zerg > 0 ? true : false,
-                'primal': this.totalGame.zerg > 0 ? true : false,
-                'protoss': this.totalGame.zerg > 0 ? true : false,
-                'taldarim': this.totalGame.zerg > 0 ? true : false,
-                'terran': this.totalGame.zerg > 0 ? true : false,
-                'infested': this.totalGame.zerg > 0 ? true : false,
-                'hybrid': this.totalGame.zerg > 0 ? true : false,
+                'primal': this.totalGame.primal > 0 ? true : false,
+                'protoss': this.totalGame.protoss > 0 ? true : false,
+                'taldarim': this.totalGame.taldarim > 0 ? true : false,
+                'terran': this.totalGame.terran > 0 ? true : false,
+                'infested': this.totalGame.infested > 0 ? true : false,
+                'hybrid': this.totalGame.hybrid > 0 ? true : false,
             }
         },
     }
