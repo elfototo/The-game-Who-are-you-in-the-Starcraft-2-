@@ -174,8 +174,8 @@ audio.autoplay = true;
 audio.volume = 0.2
 
 // Случайное место вопроизведения
-audio.addEventListener('loadmetadata', function() {
-    audio.currentTime = 0 + Math.random() * (audio.duration + 1 - 0)
+audio.addEventListener('canplay', function() {
+    audio.currentTime = Math.random() * audio.duration;
 })
 
 audio_btn.addEventListener('click', function() {
