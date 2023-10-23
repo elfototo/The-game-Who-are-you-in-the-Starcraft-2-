@@ -96,7 +96,9 @@
                 </div>
             </div>
             <div class="app__body">
-                <button class="app__btn" v-for="(answer, i) in questions[number][1]" @click="nextQuestions(questions[number][2][i])">
+                <button class="app__btn" 
+                    v-for="(answer, i) in questions[number][1]" 
+                    @click="nextQuestions(questions[number][2][i])">
                     <div class="app__btn-text">{{ answer }}</div>
                 </button>
             </div>

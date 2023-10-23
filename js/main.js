@@ -78,7 +78,7 @@ let app = new Vue({
         },
         nextQuestions(answer) {
             if (this.number == 24) {
-                this.number == 0
+                this.number = 0
                 this.endGame()
             } else {
                 this.number++
