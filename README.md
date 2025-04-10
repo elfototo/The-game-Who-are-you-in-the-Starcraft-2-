@@ -21,8 +21,6 @@
     - [Prerequisites](#prerequisites)
     - [Steps to get started](#steps-to-get-started)
   - [💡 Usage](#-usage)
-  - [🔒 Security Notes](#-security-notes)
-  - [📜 License](#-license)
   - [🌐 Live Demo](#-live-demo)
   - [📸 Screenshots](#-screenshots)
 
@@ -100,19 +98,6 @@ Enjoy playing and discovering which **StarCraft 2** character you are!
 
 ---
 
-## 🔒 Security Notes
-
-- **Sensitive Data:** Ensure that no sensitive data (like API keys or credentials) is stored in the codebase or public repositories. Use environment variables (e.g., `.env`) to manage credentials.
-- **Git Ignore:** Make sure that sensitive files, such as `.env`, are added to `.gitignore` to prevent them from being committed to the repository.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
----
-
 ## 🌐 Live Demo
 
 You can play the game directly online on [GitHub Pages](https://elfototo.github.io/The-game-Who-are-you-in-the-Starcraft-2-/).
@@ -123,6 +108,4 @@ Here are some screenshots from the game:
 
 | ![Screenshot 1](./assets/screen_play_page.png) | ![Screenshot 2](./assets/screen_result_page.png) | ![Screenshot 3](./assets/screen_result_zerg_page.png) | ![Screenshot 4](./assets/screen_results_page.png) |
 |:------------------------------------------------:|:------------------------------------------------:|:------------------------------------------------:|:------------------------------------------------:|
-| **Screenshot 1**: Main screen                     | **Screenshot 2**: Answering questions            | **Screenshot 3**: Result screen                  | **Screenshot 4**: Final results with character    |
-
-Make sure to replace the `./screenshots/screenshot1.png` (and other image paths) with the actual paths to your screenshot images. You can upload them to a folder inside the repository, like `./screenshots/`.
+| **Screenshot 1**: Answering questions                     | **Screenshot 2**: Result            | **Screenshot 3**: Result                  | **Screenshot 4**: achievements    |
